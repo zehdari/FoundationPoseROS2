@@ -9,4 +9,15 @@ The main advantages to the previous repositories and isaac_ros_foundationpose:
 3. Multi-object pose estimation and tracking
 4. End-to-end assignment of object models with the segmented masks
 
+Furthermore, it provides an interactive GUI for object selection and reordering.
 
+## Features
+
+- **Object Selection GUI**: Choose and reorder object files (.obj, .stl) using a simple Tkinter GUI.
+- **Segmentation and Tracking**: Uses SAM2 for object segmentation in real-time color and depth images from a camera.
+- **Pose Estimation**: Calculates and publishes the pose of detected objects based on camera images.
+- **3D Visualization**: Visualize the objects’ pose with bounding boxes and axes.
+
+## Pipeline
+
+![Algorithm Pipeline](assets/pipeline.png)

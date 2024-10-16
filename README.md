@@ -1,4 +1,4 @@
-# FoundationPoseROS2 Multi-Object Pose Estimation and Tracking using RealSense2
+# FoundationPoseROS2 Multi-Object Pose Estimation and Tracking using ROS2 and RealSense2
 
 <p align="center">
     <img src="assets/demo.gif" alt="Demo Video" style="width: 100%; height: auto;"/>

@@ -1,7 +1,7 @@
 # FoundationPoseROS2 Multi-Object Pose Estimation and Tracking using ROS2 and RealSense2
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Demo Video" width="350">
+  <img src="assets/demo.gif" alt="Demo Video" width="380">
   <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="500"><br>
 </p>
 

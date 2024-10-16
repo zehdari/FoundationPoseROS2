@@ -6,7 +6,7 @@
       <img src="assets/demo.gif" alt="Demo Video" width="100%"/>
     </td>
     <td align="center" style="border: none;">
-      <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="82%"/>
+      <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="83%"/>
     </td>
   </tr>
 </table>

@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="assets/demo.gif" alt="Demo Video" width="330">
-  <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="435"><br>
+  <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="432"><br>
 </p>
 
 FoundationPoseROS2 is a ROS2-integrated system for 6D object pose estimation and tracking, based on the FoundationPose architecture. It uses RealSense2 with the Segment Anything Model 2 (SAM2) framework for end-to-end, model-based, real-time pose estimation and tracking of novel objects.

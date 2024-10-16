@@ -3,10 +3,10 @@
 <table>
   <tr>
     <td align="center">
-      <img src="assets/demo.gif" alt="Demo Video" width="45%"/>
+      <img src="assets/demo.gif" alt="Demo Video" width="100%"/>
     </td>
     <td align="center">
-      <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="45%"/>
+      <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="75%"/>
     </td>
   </tr>
 </table>

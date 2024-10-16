@@ -2,10 +2,10 @@
 
 <table>
   <tr>
-    <td align="center">
+    <td align="right">
       <img src="assets/demo.gif" alt="Demo Video" width="100%"/>
     </td>
-    <td align="center">
+    <td align="lwft">
       <img src="assets/demo_robot.gif" alt="Robot Demo Video" width="82.5%"/>
     </td>
   </tr>

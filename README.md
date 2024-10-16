@@ -20,4 +20,4 @@ Furthermore, it provides an interactive GUI for object selection and reordering.
 
 ## Pipeline
 
-<img src="assets/pipeline.svg" alt="Algorithm Pipeline" style="width: 50%; height: auto;"/>
+<img src="assets/pipeline.svg" alt="Algorithm Pipeline" style="width: 30%; height: auto;"/>

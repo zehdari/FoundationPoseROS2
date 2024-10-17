@@ -10,7 +10,7 @@ FoundationPoseROS2 is a ROS2-integrated system for 6D object pose estimation and
 It is built on top of [FoundationPose](https://github.com/NVlabs/FoundationPose) and [live-pose](https://github.com/Kaivalya192/live-pose).
 
 The main advantages to the previous repositories and [isaac_ros_foundationpose](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation/tree/main/isaac_ros_foundationpose):
-1. ROS2-based real-time framework that works with 8GiB GPU, unlike [isaac_ros_foundationpose](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation/tree/main/isaac_ros_foundationpose) which requires more than 64GiB GPU.
+1. ROS2-based real-time framework that works with 8GB GPU, unlike [isaac_ros_foundationpose](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation/tree/main/isaac_ros_foundationpose) which requires more than 64GB GPU.
 2. SAM2-based automatic segmentation of the objects
 3. Multi-object pose estimation and tracking
 4. End-to-end assignment of object models with the segmented masks
@@ -22,7 +22,7 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 - **ROS2 (Humble)**
 - **Ubuntu 22.04 (Jammy Jellyfish)**
-- **8GiB NVIDIA GPU**
+- **8GB NVIDIA GPU**
 - **Intel RealSense Camera  D435**
 
 

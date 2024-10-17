@@ -15,12 +15,25 @@ The main advantages to the previous repositories and [isaac_ros_foundationpose](
 3. Multi-object pose estimation and tracking
 4. End-to-end assignment of object models with the segmented masks
 
-Furthermore, it provides an interactive GUI for object selection and reordering.
+Furthermore, it provides an interactive GUI for object model-to-mask assignment for end-to-end multi-pose estimation and tracking.
+
+
+## Env setup: Conda 
+
+# create conda environment
+conda create -n foundationpose_ros python=3.10
+
+# activate conda environment
+conda activate foundationpose_ros
+
+# install dependencies
+python -m pip install -r requirements.txt
+
 
 ## Features
 
 - **Object Selection GUI**: Choose and reorder object files (.obj, .stl) using a simple Tkinter GUI.
-- **Segmentation and Tracking**: Uses SAM2 for object segmentation in real-time color and depth images from a camera.
+- **Segmentation and Tracking**: SAM2 is used for object segmentation in real-time colour and depth images from a camera.
 - **Pose Estimation**: Calculates and publishes the pose of detected objects based on camera images.
 - **3D Visualization**: Visualize the objects’ pose with bounding boxes and axes.
 

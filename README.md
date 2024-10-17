@@ -22,7 +22,7 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 - **ROS2 (Humble)**
 - **Ubuntu 22.04 (Jammy Jellyfish)**
-- **8GB NVIDIA GPU**
+- **Minimum 8GB NVIDIA GPU**
 - **Intel RealSense Camera  D435**
 
 

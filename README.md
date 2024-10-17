@@ -17,6 +17,10 @@ The main advantages to the previous repositories and [isaac_ros_foundationpose](
 
 Furthermore, it provides an interactive GUI for object model-to-mask assignment for end-to-end multi-pose estimation and tracking.
 
+## Tutorial
+
+[![Tutorial](https://img.youtube.com/vi/Gfa9k4_eFjY/0.jpg)](https://youtu.be/Gfa9k4_eFjY)
+
 
 ## Env setup: conda 
 

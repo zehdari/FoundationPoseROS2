@@ -19,10 +19,10 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Tutorial
 
-<video width="640" height="360" controls>
+[<video width="640" height="360" controls>
   <source src="[assets/tutorial.mp4](https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/a73eb8412972296c8cf5c55fde940eed4e8d159a/assets/tutorial.mp4)" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video>](https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/a73eb8412972296c8cf5c55fde940eed4e8d159a/assets/tutorial.mp4)
 
 ## Env setup: conda 
 

@@ -19,7 +19,10 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Tutorial
 
-[![Watch the video](assets/thumbnail.png)](assets/tutorial.mp4)
+<video width="640" height="360" controls>
+  <source src="assets/tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Env setup: conda 
 

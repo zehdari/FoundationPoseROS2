@@ -18,7 +18,7 @@ The main advantages to the previous repositories and [isaac_ros_foundationpose](
 Furthermore, it provides an interactive GUI for object model-to-mask assignment for end-to-end multi-pose estimation and tracking.
 
 
-## Env setup: Conda 
+## Env setup: conda 
 
 ### create conda environment
 conda create -n foundationpose_ros python=3.10

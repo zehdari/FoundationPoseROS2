@@ -20,9 +20,10 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 ## Tutorial
 
 <div align="center">
-    <a href="https://youtu.be/Gfa9k4_eFjY">
-        <img src="https://img.youtube.com/vi/Gfa9k4_eFjY/0.jpg" alt="Watch the video" width="600"/>
-    </a>
+    <video width="600" controls>
+        <source src="assets/tutorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
 ## Env setup: conda 

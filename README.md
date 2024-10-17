@@ -19,10 +19,9 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Tutorial
 
-https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/a73eb8412972296c8cf5c55fde940eed4e8d159a/assets/tutorial.mp4
+https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/a73eb8412972296c8cf5c55fde940eed4e8d159a
 <p align="center">
-<em>Simulation Testing & Real-World Validation</em>
-</p>)
+</p>
 
 ## Env setup: conda 
 

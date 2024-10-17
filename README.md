@@ -20,16 +20,16 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Env setup: conda 
 
-'''
-#create conda environment
+```bash
+# Create conda environment
 conda create -n foundationpose_ros python=3.10
 
-#activate conda environment
+# Activate conda environment
 conda activate foundationpose_ros
 
-#install dependencies
+# Install dependencies
 python -m pip install -r requirements.txt
-'''
+```
 
 ## Features
 

@@ -20,15 +20,31 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Prerequisites
 
-- **ROS2 (Humble)**
 - **Ubuntu 22.04 (Jammy Jellyfish)**
+- **ROS2 (Humble)**
 - **Minimum 8GB NVIDIA GPU**
 - **Intel RealSense Camera  D435**
 
 
+## Dependencies
+
+```bash
+# Install ROS2 on Ubuntu
+sudo apt install ros-humble-desktop
+
+# Install librealsense2 
+sudo apt install ros-humble-librealsense2*
+
+# Install debian realsense2 package
+sudo apt install ros-humble-realsense2-*
+```
+
 ## Env setup: conda 
 
 ```bash
+# Clone repository
+git clone https://github.com/ammar-n-abbas/FoundationPoseROS2.git
+
 # Create conda environment
 conda create -n foundationpose_ros python=3.10
 
@@ -38,8 +54,11 @@ conda activate foundationpose_ros
 # Install dependencies
 python -m pip install -r requirements.txt
 
+# Clone source repository FoundationPose
+git clone https://github.com/NVlabs/FoundationPose.git
+
 # Build extensions
-bash build_all_conda.sh
+cd FoundationPose && bash build_all_conda.sh
 ```
 
 ## Tutorial

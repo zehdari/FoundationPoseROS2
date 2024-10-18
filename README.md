@@ -26,11 +26,6 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 - **Intel RealSense Camera  D435**
 
 
-## Tutorial
-
-https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
-
-
 ## Env setup: conda 
 
 ```bash
@@ -42,7 +37,28 @@ conda activate foundationpose_ros
 
 # Install dependencies
 python -m pip install -r requirements.txt
+
+# Build extensions
+bash build_all_conda.sh
 ```
+
+## Tutorial
+
+```bash
+# Run
+python ./FoundationPoseROS2/foundationpose_ros_multi.py
+```
+
+https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
+
+
+## Run on novel objects
+
+add the mesh file in .obj or .stl format to the folder:
+```bash
+"./FoundationPoseROS2/demo_data/object_name/object_mesh.obj"
+```
+
 
 ## Features
 
@@ -50,6 +66,7 @@ python -m pip install -r requirements.txt
 - **Segmentation and Tracking**: SAM2 is used for object segmentation in real-time colour and depth images from a camera.
 - **Pose Estimation**: Calculates and publishes the pose of detected objects based on camera images.
 - **3D Visualization**: Visualize the objects’ pose with bounding boxes and axes.
+
 
 ## Pipeline
 

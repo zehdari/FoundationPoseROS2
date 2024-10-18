@@ -73,7 +73,7 @@ https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
 
 ## Run on novel objects
 
-add the mesh file in .obj or .stl format to the folder:
+Add the mesh file in .obj or .stl format to the folder:
 ```bash
 "./FoundationPoseROS2/demo_data/object_name/object_mesh.obj"
 ```

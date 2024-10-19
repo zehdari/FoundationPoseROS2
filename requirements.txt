@@ -1,6 +1,3 @@
-torch
-torchvision
-torchaudio
 aiohttp==3.10.10
 albumentations==1.4.18
 cv_bridge

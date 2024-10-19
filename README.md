@@ -20,9 +20,10 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ## Prerequisites
 
-- **Ubuntu 22.04 (Jammy Jellyfish)**
-- **ROS2 (Humble)**
+- **Ubuntu**
+- **ROS2**
 - **Minimum 8GB NVIDIA GPU**
+- **CUDA 12.x**
 - **Intel RealSense Camera  D435**
 
 
@@ -37,6 +38,16 @@ sudo apt install ros-humble-librealsense2*
 
 # Install debian realsense2 package
 sudo apt install ros-humble-realsense2-*
+
+# Setup CUDA 12.x
+sudo apt-get --purge remove 'nvidia-*'
+sudo apt-get autoremove
+sudo reboot
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-get update
+sudo apt-get -y install cuda
 ```
 
 ## Env setup: conda 
@@ -54,7 +65,7 @@ conda activate foundationpose_ros
 # Install dependencies
 python -m pip install -r requirements.txt
 
-# Clone source repository FoundationPose
+# Clone source repository of FoundationPose
 git clone https://github.com/NVlabs/FoundationPose.git
 
 # Build extensions

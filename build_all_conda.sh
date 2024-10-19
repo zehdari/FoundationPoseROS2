@@ -10,6 +10,8 @@ source $(conda info --base)/etc/profile.d/conda.sh
 conda activate foundationpose_ros
 
 # Install dependencies
+pip install torchvision==0.16.0+cu121 torchaudio==2.1.0 torch==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 python -m pip install -r requirements.txt
 
 # Clone source repository of FoundationPose

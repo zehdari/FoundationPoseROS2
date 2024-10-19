@@ -1,4 +1,19 @@
+#!/bin/bash
+
 PROJ_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+# Create conda environment
+conda create -n foundationpose_ros python=3.10 -y
+
+# Activate conda environment
+source $(conda info --base)/etc/profile.d/conda.sh
+conda activate foundationpose_ros
+
+# Install dependencies
+python -m pip install -r requirements.txt
+
+# Clone source repository of FoundationPose
+git clone https://github.com/NVlabs/FoundationPose.git
 
 # Install pybind11
 cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/pybind/pybind11 && \
@@ -18,7 +33,7 @@ cd ${PROJ_ROOT}/FoundationPose && wget https://gitlab.com/libeigen/eigen/-/archi
 # Clone and install nvdiffrast
 cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/NVlabs/nvdiffrast && \
     conda activate foundationpose_ros && cd /nvdiffrast && pip install .
-    
+
 # Install mycpp
 cd ${PROJ_ROOT}/FoundationPose/mycpp/ && \
 rm -rf build && mkdir -p build && cd build && \

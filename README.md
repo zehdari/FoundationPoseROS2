@@ -56,20 +56,8 @@ sudo apt-get -y install cuda
 # Clone repository
 git clone https://github.com/ammar-n-abbas/FoundationPoseROS2.git
 
-# Create conda environment
-conda create -n foundationpose_ros python=3.10
-
-# Activate conda environment
-conda activate foundationpose_ros
-
-# Install dependencies
-python -m pip install -r requirements.txt
-
-# Clone source repository of FoundationPose
-git clone https://github.com/NVlabs/FoundationPose.git
-
 # Build extensions
-cd FoundationPose && bash build_all_conda.sh
+bash build_all_conda.sh
 ```
 
 

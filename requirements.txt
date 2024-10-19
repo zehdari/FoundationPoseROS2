@@ -30,9 +30,6 @@ pyrender==0.1.45
 PySide6==6.8.0.1
 pytest==8.2.2
 pytinyrenderer==0.0.14
-torch
-torchaudio
-torchvision
 pytorch_lightning==2.4.0
 PyYAML==6.0.2
 PyYAML==6.0.2

@@ -72,7 +72,8 @@ git clone https://github.com/NVlabs/FoundationPose.git
 cd FoundationPose && bash build_all_conda.sh
 ```
 
-## Tutorial
+
+## Run model-based demo
 
 ```bash
 # Run
@@ -87,6 +88,11 @@ https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
 Add the mesh file in .obj or .stl format to the folder:
 ```bash
 "./FoundationPoseROS2/demo_data/object_name/object_mesh.obj"
+```
+
+```bash
+# Run
+python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
 

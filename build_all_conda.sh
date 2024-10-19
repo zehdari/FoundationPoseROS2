@@ -15,6 +15,10 @@ cd ${PROJ_ROOT}/FoundationPose && wget https://gitlab.com/libeigen/eigen/-/archi
     cmake .. && \
     make install
 
+# Clone and install nvdiffrast
+cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/NVlabs/nvdiffrast && \
+    conda activate foundationpose_ros && cd /nvdiffrast && pip install .
+    
 # Install mycpp
 cd ${PROJ_ROOT}/FoundationPose/mycpp/ && \
 rm -rf build && mkdir -p build && cd build && \

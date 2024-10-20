@@ -1,5 +1,6 @@
 import sys
 sys.path.append('./FoundationPose')
+sys.path.append('./FoundationPose/nvdiffrast')
 
 import rclpy
 from rclpy.node import Node

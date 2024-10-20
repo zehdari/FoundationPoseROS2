@@ -61,7 +61,7 @@ cd FoundationPoseROS2 && bash build_all_conda.sh
 ```
 
 > [!NOTE]
-> Conda env has to be built with the correct Python version based on ROS2 version (such as 3.8 for foxy and 3.10 for humble).
+> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 Humble.
 
 
 ## Run model-based demo

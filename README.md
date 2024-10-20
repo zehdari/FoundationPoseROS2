@@ -65,7 +65,7 @@ cd FoundationPoseROS2 && bash build_all_conda.sh
 
 ```bash
 # Run
-python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
 https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606

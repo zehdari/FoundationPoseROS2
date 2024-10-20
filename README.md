@@ -57,7 +57,7 @@ sudo apt-get -y install cuda
 git clone https://github.com/ammar-n-abbas/FoundationPoseROS2.git
 
 # Build extensions
-bash build_all_conda.sh
+cd FoundationPoseROS2 && bash build_all_conda.sh
 ```
 
 

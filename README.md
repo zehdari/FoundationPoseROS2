@@ -68,14 +68,14 @@ cd FoundationPoseROS2 && bash build_all_conda.sh
 
 ```bash
 # Run camera node
-ros2 launch realsense2_camera rs_launch.py enable_rgbd:=true enable_sync:=true align_depth.enable:=true enable_color:=true enable_depth:=true pointcloud.enable:=true
+source /opt/ros/<ROS_DISTRO>/setup.bash && ros2 launch realsense2_camera rs_launch.py enable_rgbd:=true enable_sync:=true align_depth.enable:=true enable_color:=true enable_depth:=true pointcloud.enable:=true
 ```
 
 In a separate terminal
 
 ```bash
 # Run foundationpose_ros_multi
-conda activate foundationpose_ros && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
 https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606

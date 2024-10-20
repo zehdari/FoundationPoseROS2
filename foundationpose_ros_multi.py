@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from estimater import *
+from FoundationPose.estimater import *
 import cv2
 import numpy as np
 import trimesh

@@ -15,6 +15,7 @@ kiwisolver
 launch_ros
 loguru==0.7.2
 matplotlib==3.9.2
+Ninja
 numpy==2.1.2
 omegaconf==2.3.0
 open3d==0.18.0

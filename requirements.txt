@@ -26,6 +26,7 @@ progressbar33==2.4
 psutil
 PyAutoGUI==0.9.54
 PyOpenGL==3.1.0
+pyparsing
 pyrender==0.1.45
 PySide6==6.8.0.1
 pytest==8.2.2
@@ -39,6 +40,7 @@ ruptures==1.1.9
 scikit_learn==1.5.2
 scipy==1.14.1
 setuptools==72.1.0
+six
 tqdm==4.66.5
 transformations==2024.5.24
 trimesh==4.4.7

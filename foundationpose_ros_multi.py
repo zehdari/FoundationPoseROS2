@@ -305,7 +305,7 @@ class PoseEstimationNode(Node):
             pose_est = data['pose_est']
             obj_mask = data['mask']
             to_origin = data['to_origin']
-            if pose_est.is_register:
+            if pose_est.scorer is None:
                 pose = pose_est.track_one(rgb=color, depth=depth, K=self.cam_K, iteration=args.track_refine_iter)
                 center_pose = pose @ np.linalg.inv(to_origin)
 

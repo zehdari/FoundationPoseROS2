@@ -358,7 +358,7 @@ class PoseEstimationNode(Node):
         self.pose_publishers[topic_name].publish(pose_stamped_msg)
 
 def main(args=None):
-    source_directory = "./FoundationPoseROS2/demo_data"
+    source_directory = "./demo_data"
     file_paths = glob.glob(os.path.join(source_directory, '**', '*.obj'), recursive=True) + \
                  glob.glob(os.path.join(source_directory, '**', '*.stl'), recursive=True) + \
                  glob.glob(os.path.join(source_directory, '**', '*.STL'), recursive=True)

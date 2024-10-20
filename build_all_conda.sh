@@ -20,7 +20,8 @@ git clone https://github.com/NVlabs/FoundationPose.git
 # Create the weights directory and download the pretrained weights from FoundationPose
 cd ${PROJ_ROOT}/FoundationPose && \
     mkdir -p weights && \
-    gdown --folder https://drive.google.com/drive/folders/1DFezOAD0oD1BblsXVxqDsl8fj0qzB82i -O weights
+    gdown --folder https://drive.google.com/drive/folders/1BEQLZH69UO5EOfah-K9bfI3JyP9Hf7wC -O weights && \
+    gdown --folder https://drive.google.com/drive/folders/12Te_3TELLes5cim1d7F7EBTwUSe7iRBj -O weights
 
 # Install pybind11
 cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/pybind/pybind11 && \

@@ -220,7 +220,8 @@ class PoseEstimationNode(Node):
                                 mesh=temp_mesh,
                                 scorer=self.scorer,
                                 refiner=self.refiner,
-                                glctx=self.glctx
+                                glctx=self.glctx,
+                                debug_dir='./FoundationPose'
                             )
 
                             temporary_pose_estimations[sequential_id] = {

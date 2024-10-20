@@ -17,11 +17,10 @@ python -m pip install -r requirements.txt
 # Clone source repository of FoundationPose
 git clone https://github.com/NVlabs/FoundationPose.git
 
-# Create the weights directory if it doesn't exist
-mkdir -p weights
-
-# Download pretrained weights
-gdown --folder https://drive.google.com/drive/folders/1DFezOAD0oD1BblsXVxqDsl8fj0qzB82i -O weights
+# Create the weights directory and download the pretrained weights from FoundationPose
+cd ${PROJ_ROOT}/FoundationPose && \
+    mkdir -p weights && \
+    gdown --folder https://drive.google.com/drive/folders/1DFezOAD0oD1BblsXVxqDsl8fj0qzB82i -O weights
 
 # Install pybind11
 cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/pybind/pybind11 && \

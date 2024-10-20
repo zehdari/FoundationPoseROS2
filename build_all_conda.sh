@@ -53,4 +53,4 @@ cd ${PROJ_ROOT}/FoundationPose/bundlesdf/mycuda && \
 rm -rf build *egg* *.so && \
 python3 -m pip install -e .
 
-cd ${PROJ_ROOT}
+cd ${PROJ_ROOT} && conda activate foundationpose_ros

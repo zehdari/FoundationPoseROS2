@@ -67,7 +67,14 @@ cd FoundationPoseROS2 && bash build_all_conda.sh
 ## Run model-based demo
 
 ```bash
-# Run
+# Run camera node
+ros2 launch realsense2_camera rs_launch.py enable_rgbd:=true enable_sync:=true align_depth.enable:=true enable_color:=true enable_depth:=true pointcloud.enable:=true
+```
+
+In a separate terminal
+
+```bash
+# Run foundationpose_ros_multi
 conda activate foundationpose_ros && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 

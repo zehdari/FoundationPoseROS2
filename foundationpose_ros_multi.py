@@ -1,6 +1,9 @@
+import sys
+sys.path.append('./FoundationPose')
+
 import rclpy
 from rclpy.node import Node
-from FoundationPose.estimater import *
+from estimater import *
 import cv2
 import numpy as np
 import trimesh

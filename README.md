@@ -60,10 +60,8 @@ git clone https://github.com/ammar-n-abbas/FoundationPoseROS2.git
 cd FoundationPoseROS2 && bash build_all_conda.sh
 ```
 
-<div style="border-left: 4px solid blue; padding-left: 10px;">
-  <p><strong>Note</strong></p>
-  <p>Conda env has to be built with the correct python version based on ROS2 version (such as 3.8 for foxy and 3.10 for humble).</p>
-</div>
+> [!NOTE]
+> Conda env has to be built with the correct Python version based on ROS2 version (such as 3.8 for foxy and 3.10 for humble).
 
 
 ## Run model-based demo

@@ -31,13 +31,13 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 
 ```bash
 # Install ROS2 on Ubuntu
-sudo apt install ros-humble-desktop
+sudo apt install ros-<ROS_DISTRO>-desktop
 
-# Install librealsense2 
-sudo apt install ros-humble-librealsense2*
+# Install librealsense2
+sudo apt install ros-<ROS_DISTRO>-librealsense2*
 
 # Install debian realsense2 package
-sudo apt install ros-humble-realsense2-*
+sudo apt install ros-<ROS_DISTRO>-realsense2-*
 
 # Setup CUDA 12.x
 sudo apt-get --purge remove 'nvidia-*'
@@ -61,7 +61,7 @@ cd FoundationPoseROS2 && bash build_all_conda.sh
 ```
 
 > [!NOTE]
-> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 Humble (edit the build_all_conda.sh file).
+> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 <ROS_DISTRO> (edit the build_all_conda.sh file).
 
 
 ## Run model-based demo

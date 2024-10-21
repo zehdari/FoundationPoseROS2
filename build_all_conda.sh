@@ -2,13 +2,6 @@
 
 PROJ_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-# Create conda environment
-conda create -n foundationpose_ros python=3.10 -y
-
-# Activate conda environment
-source $(conda info --base)/etc/profile.d/conda.sh
-conda activate foundationpose_ros
-
 # Install dependencies
 pip install torchvision==0.16.0+cu121 torchaudio==2.1.0 torch==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
 pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
@@ -38,7 +31,7 @@ cd ${PROJ_ROOT}/FoundationPose && wget https://gitlab.com/libeigen/eigen/-/archi
 
 # Clone and install nvdiffrast
 cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/NVlabs/nvdiffrast && \
-    conda activate foundationpose_ros && cd /nvdiffrast && pip install .
+    cd /nvdiffrast && pip install .
 
 # Install mycpp
 cd ${PROJ_ROOT}/FoundationPose/mycpp/ && \
@@ -51,4 +44,4 @@ cd ${PROJ_ROOT}/FoundationPose/bundlesdf/mycuda && \
 rm -rf build *egg* *.so && \
 python3 -m pip install -e .
 
-cd ${PROJ_ROOT} && conda activate foundationpose_ros
+cd ${PROJ_ROOT}

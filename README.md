@@ -113,3 +113,7 @@ python ./FoundationPoseROS2/foundationpose_ros_multi.py
 <p align="center">
     <img src="assets/pipeline.svg" alt="Algorithm Pipeline" style="width: 30%; height: auto;"/>
 </p>
+
+
+## Acknowledgement
+This project has emanated from research conducted with the financial support of the EU Commission Recovery and Resilience Facility under the Science Foundation Ireland Future Digital Challenge Grant Number 22/NCF/FD/10929.

@@ -1,4 +1,4 @@
-# FoundationPoseROS2: Multi-Object Pose Estimation and Tracking of Novel Objects using ROS2 and RealSense2
+# FoundationPoseROS2: Multi-Object Pose Estimation and Tracking of Novel Objects in ROS2 with RealSense2
 
 <p align="center">
   <img src="assets/demo.gif" alt="Demo Video" width="330">

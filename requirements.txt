@@ -12,7 +12,6 @@ imageio==2.35.1
 joblib==1.4.2
 kornia==0.5.10
 kiwisolver
-launch_ros
 loguru==0.7.2
 matplotlib==3.9.2
 Ninja

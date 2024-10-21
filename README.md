@@ -57,17 +57,22 @@ sudo apt-get -y install cuda
 git clone https://github.com/ammar-n-abbas/FoundationPoseROS2.git
 ```
 
-> [!IMPORTANT]
-> In the `setup.py` file located at `/FoundationPose/bundlesdf/mycuda/`, the C++ flags should be updated from **C++14** to **C++17** for compatibility with newer Nvidia GPUs. It is located at lines 18 and 19 in the file's `nvcc_flags` and c_flags section.
+```bash
+# Create conda environment
+conda create -n foundationpose_ros python=3.10 -y
 
+# Activate conda environment
+conda activate foundationpose_ros
+```
+> [!NOTE]
+> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 <ROS_DISTRO>.
 
 ```bash
 # Build extensions
 cd FoundationPoseROS2 && bash build_all_conda.sh
 ```
-
-> [!NOTE]
-> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 <ROS_DISTRO> (edit the build_all_conda.sh file).
+> [!IMPORTANT]
+> In the `setup.py` file located at `/FoundationPose/bundlesdf/mycuda/`, the C++ flags should be updated from **C++14** to **C++17** for compatibility with newer Nvidia GPUs. It is located at lines 18 and 19 in the file's `nvcc_flags` and c_flags section.
 
 
 ## Run model-based demo

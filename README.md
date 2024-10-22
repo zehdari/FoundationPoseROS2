@@ -24,7 +24,7 @@ Furthermore, it provides an interactive GUI for object model-to-mask assignment 
 - **ROS2**
 - **Minimum 8GB NVIDIA GPU**
 - **CUDA 12.x**
-- **Intel RealSense Camera  D435**
+- **Intel RealSense Camera**
 
 
 ## Dependencies

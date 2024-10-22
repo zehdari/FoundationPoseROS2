@@ -22,7 +22,7 @@ cd ${PROJ_ROOT}/FoundationPose && git clone https://github.com/pybind/pybind11 &
 
 # Install Eigen
 cd ${PROJ_ROOT}/FoundationPose && wget https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz && \
-    tar xvzf ./eigen-3.4.0.tar.gz && \
+    tar xvzf ./eigen-3.4.0.tar.gz && rm ./eigen-3.4.0.tar.gz && \
     cd eigen-3.4.0 && \
     mkdir build && \
     cd build && \

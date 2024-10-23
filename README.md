@@ -112,6 +112,9 @@ Add the mesh file in .obj or .stl format to the folder:
 python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
+> [!NOTE]
+> Check the camera topics and edit accordingly in the python file.
+
 
 ## Features
 

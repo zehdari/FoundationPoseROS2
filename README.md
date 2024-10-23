@@ -48,6 +48,14 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 sudo dpkg -i cuda-keyring_1.0-1_all.deb
 sudo apt-get update
 sudo apt-get -y install cuda
+
+# Install Miniconda
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+
+source ~/miniconda3/bin/activate
 ```
 
 ## Env setup: conda 
@@ -65,7 +73,7 @@ conda create -n foundationpose_ros python=3.10 -y
 conda activate foundationpose_ros
 ```
 > [!NOTE]
-> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS2 Foxy and Python 3.10 for ROS2 <ROS_DISTRO>.
+> Conda environment must be created with the correct Python version according to the ROS2 distribution to ensure compatibility. For example, use Python 3.8 for ROS Foxy and Python 3.10 for ROS Humble.
 
 ```bash
 # Build extensions

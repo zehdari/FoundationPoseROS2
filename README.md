@@ -96,6 +96,8 @@ In a separate terminal
 # Run foundationpose_ros_multi
 conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
+> [!NOTE]
+> Check the camera topics and edit accordingly in the python file.
 
 https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
 
@@ -111,9 +113,6 @@ Add the mesh file in .obj or .stl format to the folder:
 # Run
 python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
-
-> [!NOTE]
-> Check the camera topics and edit accordingly in the python file.
 
 
 ## Features

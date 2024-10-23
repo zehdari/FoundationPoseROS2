@@ -6,6 +6,7 @@ cycler
 dearpygui==1.11.1
 einops==0.8.0
 glfw==2.7.0
+gdown
 h5py
 hickle==5.0.3
 imageio==2.35.1

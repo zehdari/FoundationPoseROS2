@@ -101,6 +101,36 @@ conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && 
 
 https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
 
+## Run model-based demo through Rosbag2
+
+### 1. Download the Recorded rosbag
+
+First, download the recorded rosbag from the following link:
+
+[Download Recorded rosbag](https://drive.google.com/drive/folders/17FRQog_fpqVxo_T85ItfpEa6fUo5fhZ7?usp=sharing)
+
+### 2. Play the Recorded rosbag
+
+Once you've downloaded the rosbag file, navigate to the directory where it's located, and play it back with the following command:
+
+```bash
+# Play the downloaded rosbag
+source /opt/ros/<ROS_DISTRO>/setup.bash && ros2 bag play <path_to_your_rosbag_file>
+```
+
+Replace `<path_to_your_rosbag_file>` with the path to the `.db3` file you downloaded.
+
+### 3. Run FoundationPoseROS2
+
+In a separate terminal, activate your conda environment and run the FoundationPoseROS2 script to start object pose estimation and tracking:
+
+```bash
+# Activate the conda environment and run foundationpose_ros_multi
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+```
+
+> **Note:** Make sure the `foundationpose_ros_multi.py` script is configured to subscribe to the correct topics from the rosbag. You may need to update the topic names in the script to match those recorded in your rosbag.
+
 
 ## Run on novel objects
 

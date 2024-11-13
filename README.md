@@ -133,6 +133,7 @@ conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && 
 > Ensure the `foundationpose_ros_multi.py` script is configured to subscribe to the correct topics from the rosbag. You may need to update the topic names in the script to match those recorded in the rosbag
 > **(replace '/camera' with '/camera/camera').**
 
+![Demo Video](assets/cube_rosbag2_demo_data.mp4)
 
 ## Run on novel objects
 

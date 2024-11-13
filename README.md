@@ -97,7 +97,7 @@ In a separate terminal
 conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 > [!NOTE]
-> Check the camera topics and edit accordingly in the python file.
+> Check the camera topics and edit accordingly in the Python file.
 
 https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
 
@@ -129,7 +129,8 @@ In a separate terminal, activate your conda environment and run the FoundationPo
 conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
-> **Note:** Make sure the `foundationpose_ros_multi.py` script is configured to subscribe to the correct topics from the rosbag. You may need to update the topic names in the script to match those recorded in your rosbag.
+> [!NOTE]
+> Ensure the `foundationpose_ros_multi.py` script is configured to subscribe to the correct topics from the rosbag. You may need to update the topic names in the script to match those recorded in your rosbag.
 
 
 ## Run on novel objects

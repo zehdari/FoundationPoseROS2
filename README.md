@@ -138,7 +138,7 @@ conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && 
 
 Add the mesh file in .obj or .stl format to the folder:
 ```bash
-"./FoundationPoseROS2/demo_data/object_name/object_mesh.obj"
+"./FoundationPoseROS2/demo_data/object_name/<OBJECT_MESH>.obj"
 ```
 
 ```bash

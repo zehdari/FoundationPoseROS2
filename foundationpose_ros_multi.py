@@ -106,9 +106,9 @@ class PoseEstimationNode(Node):
         super().__init__('pose_estimation_node')
         
         # ROS subscriptions and publishers
-        self.image_sub = self.create_subscription(Image, '/camera/color/image_raw', self.image_callback, 10)
-        self.depth_sub = self.create_subscription(Image, '/camera/aligned_depth_to_color/image_raw', self.depth_callback, 10)
-        self.info_sub = self.create_subscription(CameraInfo, '/camera/color/camera_info', self.camera_info_callback, 10)
+        self.image_sub = self.create_subscription(Image, '/camera/camera/color/image_raw', self.image_callback, 10)
+        self.depth_sub = self.create_subscription(Image, '/camera/camera/aligned_depth_to_color/image_raw', self.depth_callback, 10)
+        self.info_sub = self.create_subscription(CameraInfo, '/camera/camera/color/camera_info', self.camera_info_callback, 10)
         
         self.bridge = CvBridge()
         self.depth_image = None
@@ -127,7 +127,7 @@ class PoseEstimationNode(Node):
         self.glctx = dr.RasterizeCudaContext()
 
         # Initialize SAM2 model
-        self.seg_model = SAM("sam2_b.pt")
+        self.seg_model = SAM("sam2.1_b.pt")
 
         self.pose_estimations = {}  # Dictionary to track multiple pose estimations
         self.pose_publishers = {}  # Dictionary to store publishers for each object
@@ -220,8 +220,7 @@ class PoseEstimationNode(Node):
                                 mesh=temp_mesh,
                                 scorer=self.scorer,
                                 refiner=self.refiner,
-                                glctx=self.glctx,
-                                debug_dir='./FoundationPose'
+                                glctx=self.glctx
                             )
 
                             temporary_pose_estimations[sequential_id] = {
@@ -305,7 +304,7 @@ class PoseEstimationNode(Node):
             pose_est = data['pose_est']
             obj_mask = data['mask']
             to_origin = data['to_origin']
-            if pose_est.scorer is None:
+            if pose_est.is_register:
                 pose = pose_est.track_one(rgb=color, depth=depth, K=self.cam_K, iteration=args.track_refine_iter)
                 center_pose = pose @ np.linalg.inv(to_origin)
 
@@ -316,7 +315,7 @@ class PoseEstimationNode(Node):
                 pose = pose_est.register(K=self.cam_K, rgb=color, depth=depth, ob_mask=obj_mask, iteration=args.est_refine_iter)
             self.i += 1
 
-        cv2.imshow('Pose Estimation and Tracking', visualization_image[..., ::-1])
+        cv2.imshow('Pose Estimation', visualization_image[..., ::-1])
         cv2.waitKey(1)
 
     def visualize_pose(self, image, center_pose, idx):
@@ -359,7 +358,7 @@ class PoseEstimationNode(Node):
         self.pose_publishers[topic_name].publish(pose_stamped_msg)
 
 def main(args=None):
-    source_directory = "./demo_data"
+    source_directory = "demo_data"
     file_paths = glob.glob(os.path.join(source_directory, '**', '*.obj'), recursive=True) + \
                  glob.glob(os.path.join(source_directory, '**', '*.stl'), recursive=True) + \
                  glob.glob(os.path.join(source_directory, '**', '*.STL'), recursive=True)

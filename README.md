@@ -99,7 +99,10 @@ conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && 
 > [!NOTE]
 > Check the camera topics and edit accordingly in the Python file.
 
-https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/4ef1f4cf-8900-451d-b006-47942b9f4606" width="400" />
+</div>
+
 
 ## Run model-based demo through Rosbag2
 

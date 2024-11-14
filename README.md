@@ -129,7 +129,11 @@ In a separate terminal, activate your conda environment, export the correct CUDA
 conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
-[![Demo data rosbag screen recording](https://img.youtube.com/vi/p-QBK7yJKWs/0.jpg)](https://youtu.be/p-QBK7yJKWs)
+<p align="center">
+  <a href="https://youtu.be/p-QBK7yJKWs">
+    <img src="https://img.youtube.com/vi/p-QBK7yJKWs/0.jpg" alt="Demo data rosbag screen recording">
+  </a>
+</p>
 
 [Demo data rosbag terminal log](https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/main/_misc/demo_data_terminal_log.txt)
 

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 PROJ_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~
 
 # Install dependencies
 pip install torchvision==0.16.0+cu121 torchaudio==2.1.0 torch==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121

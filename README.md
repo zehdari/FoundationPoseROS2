@@ -77,7 +77,7 @@ conda activate foundationpose_ros
 
 ```bash
 # Build extensions
-cd FoundationPoseROS2 && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && bash build_all_conda.sh
+cd FoundationPoseROS2 && export PATH=/usr/local/<YOUR_cuda-12.X_VERSION>/bin${PATH:+:${PATH}}~ && bash build_all_conda.sh
 ```
 > [!IMPORTANT]
 > In the `setup.py` file located at `/FoundationPose/bundlesdf/mycuda/`, the C++ flags should be updated from **C++14** to **C++17** for compatibility with newer Nvidia GPUs. It is located at lines 18 and 19 in the file's `nvcc_flags` and c_flags section.
@@ -94,7 +94,7 @@ In a separate terminal
 
 ```bash
 # Run foundationpose_ros_multi
-conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/<YOUR_cuda-12.X_VERSION>/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 > [!NOTE]
 > Check the camera topics and edit accordingly in the Python file.
@@ -129,7 +129,7 @@ In a separate terminal, activate your conda environment, export the correct CUDA
 
 ```bash
 # Activate the conda environment and run foundationpose_ros_multi
-conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/<YOUR_cuda-12.X_VERSION>/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
 <p align="center">
@@ -149,7 +149,7 @@ Add the mesh file in .obj or .stl format to the folder:
 
 ```bash
 # Run
-conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/<YOUR_cuda-12.X_VERSION>/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
 > [!NOTE]

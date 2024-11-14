@@ -77,7 +77,7 @@ conda activate foundationpose_ros
 
 ```bash
 # Build extensions
-cd FoundationPoseROS2 && bash build_all_conda.sh
+cd FoundationPoseROS2 && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && bash build_all_conda.sh
 ```
 > [!IMPORTANT]
 > In the `setup.py` file located at `/FoundationPose/bundlesdf/mycuda/`, the C++ flags should be updated from **C++14** to **C++17** for compatibility with newer Nvidia GPUs. It is located at lines 18 and 19 in the file's `nvcc_flags` and c_flags section.

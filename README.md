@@ -129,7 +129,7 @@ In a separate terminal, activate your conda environment, export the correct CUDA
 conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
-
+[Demo Data Terminal Log](https://github.com/ammar-n-abbas/FoundationPoseROS2/blob/main/_misc/demo_data_terminal_log.txt)
 
 ## Run on novel objects
 

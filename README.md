@@ -94,7 +94,7 @@ In a separate terminal
 
 ```bash
 # Run foundationpose_ros_multi
-conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 > [!NOTE]
 > Check the camera topics and edit accordingly in the Python file.
@@ -122,18 +122,14 @@ Replace `<path_to_your_rosbag_file>` with the path to the `.db3` file you downlo
 
 ### 3. Run FoundationPoseROS2
 
-In a separate terminal, activate your conda environment and run the FoundationPoseROS2 script to start object pose estimation and tracking:
+In a separate terminal, activate your conda environment, export the correct CUDA version path and run the FoundationPoseROS2 script to start object pose estimation and tracking:
 
 ```bash
 # Activate the conda environment and run foundationpose_ros_multi
-conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
 
-> [!NOTE]
-> Ensure the `foundationpose_ros_multi.py` script is configured to subscribe to the correct topics from the rosbag. You may need to update the topic names in the script to match those recorded in the rosbag
-> **(replace '/camera' with '/camera/camera').**
 
-![Demo Video](assets/cube_rosbag2_demo_data.mp4)
 
 ## Run on novel objects
 
@@ -144,8 +140,11 @@ Add the mesh file in .obj or .stl format to the folder:
 
 ```bash
 # Run
-python ./FoundationPoseROS2/foundationpose_ros_multi.py
+conda activate foundationpose_ros && source /opt/ros/<ROS_DISTRO>/setup.bash && export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}~ && python ./FoundationPoseROS2/foundationpose_ros_multi.py
 ```
+
+> [!NOTE]
+> Check the camera topics and edit accordingly in the Python file.
 
 
 ## Features

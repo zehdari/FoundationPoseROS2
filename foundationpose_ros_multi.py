@@ -1,4 +1,5 @@
 import sys
+sys.path.append('./FoundationPose')
 sys.path.append('./FoundationPose/nvdiffrast')
 
 import rclpy
@@ -20,6 +21,24 @@ import tkinter as tk
 from tkinter import Listbox, END, Button
 import glob
 
+# Save the original `__init__` and `register` methods
+original_init = FoundationPose.__init__
+original_register = FoundationPose.register
+
+# Modify `__init__` to add `is_register` attribute
+def modified_init(self, model_pts, model_normals, symmetry_tfs=None, mesh=None, scorer=None, refiner=None, glctx=None, debug=0, debug_dir='./FoundationPose'):
+    original_init(self, model_pts, model_normals, symmetry_tfs, mesh, scorer, refiner, glctx, debug, debug_dir)
+    self.is_register = False  # Initialize as False
+
+# Modify `register` to set `is_register` to True when a pose is registered
+def modified_register(self, K, rgb, depth, ob_mask, iteration):
+    pose = original_register(self, K, rgb, depth, ob_mask, iteration)
+    self.is_register = True  # Set to True after registration
+    return pose
+
+# Apply the modifications
+FoundationPose.__init__ = modified_init
+FoundationPose.register = modified_register
 
 class FileSelectorGUI:
     def __init__(self, master, file_paths):
@@ -314,7 +333,7 @@ class PoseEstimationNode(Node):
                 pose = pose_est.register(K=self.cam_K, rgb=color, depth=depth, ob_mask=obj_mask, iteration=args.est_refine_iter)
             self.i += 1
 
-        cv2.imshow('Pose Estimation', visualization_image[..., ::-1])
+        cv2.imshow('Pose Estimation & Tracking', visualization_image[..., ::-1])
         cv2.waitKey(1)
 
     def visualize_pose(self, image, center_pose, idx):

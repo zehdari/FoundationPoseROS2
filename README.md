@@ -118,7 +118,7 @@ Once you've downloaded the rosbag file, navigate to the directory where it's loc
 
 ```bash
 # Play the downloaded rosbag
-source /opt/ros/<ROS_DISTRO>/setup.bash && ros2 bag play <path_to_your_rosbag_file>
+source /opt/ros/<ROS_DISTRO>/setup.bash && ros2 bag play cube_demo_data_rosbag2/cube_demo_data_rosbag2.db3
 ```
 
 Replace `<path_to_your_rosbag_file>` with the path to the `.db3` file you downloaded.

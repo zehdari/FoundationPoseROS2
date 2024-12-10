@@ -2,7 +2,6 @@
 *.whl
 __pycache__
 cube_demo_data_rosbag2
-FoundationPose/
 foundation_pose_debug/
 _misc
 pytorch3d/
